@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+body{
+    width: 80%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+.nav-links ul a:hover{
+    text-decoration: underline;
+    color: #20bc7e;
+}
+.hero-section{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 60px 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.hero-section>.left-content{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    gap: 15px;
+    margin-top: 20px;
+}
+.hero-section>.left-content>h1{
+    font-size: 42px;
+    font-weight: 900;
+}
+.hero-section>.left-content>p{
+    color: #7c7c7c;
+}
+.hero-section>.left-content>button{
+    width: fit-content;
+    padding: 10px 23px;
+    border-radius: 20px;
+    color: white;
+    background-color: #20bc7e;
+    border: #20bc7e;
+    font-weight: 600;
+    font-size: 16px;
+}
+.hero-section>.left-content>#img1 {
+    height: 18px;
+    width: 18px;
+}
+.hero-section>.left-content>#img2{
+ position: relative;
+ left: 100%; 
+ height: 18px;
+ width: 18px;  
+}
+.hero-section>.left-content>.bg-img{
+    position: absolute;
+    z-index: -1;
+    height: 400px;
+    width: 400px;
+    bottom: 10%;
+    left: 30%;
+    
+}
+.hero-section>.right-content{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    margin-left: 30px;
+}
+.hero-section>.right-content>#greenBox{
+    position: absolute;
+    z-index: 1;
+    width: 310px;
+    height: 280px;
+    top: -100px;
+    left: 42%;
+    /* width: 35%; */
+    bottom: 30px;
+}
+.hero-section>.right-content>#yellowBox{
+    position: absolute;
+    z-index: 2;
+    width: 155px;
+    height: 190px;
+    top: -10px; 
+    left: 75%;
+}
+.hero-section>.right-content>#doctor{
+    position: absolute;
+    z-index: 3;
+    height: 480px;
+    width: 380px;
+    top: -270px;
+    left: 36%;
+    position: absolute;
+}
